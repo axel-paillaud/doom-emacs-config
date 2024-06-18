@@ -76,3 +76,8 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Hide markup like *BOLD* or =COMMAND=
+(use-package org
+  :config
+  (setq org-hide-emphasis-markers t))
