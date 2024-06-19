@@ -78,6 +78,21 @@
 ;; they are implemented.
 
 ;; Hide markup like *BOLD* or =COMMAND=
+
+;; Add timestamp when turn state TODO to DONE
+;; (setq org-log-done 'time)
+
+;; Set initial visibility to close
+;; (setq org-startup-folded t)
+
 (use-package org
   :config
-  (setq org-hide-emphasis-markers t))
+
+  ;; Hide markup like *BOLD* or =COMMAND=
+  (setq org-hide-emphasis-markers t)
+
+  ;; Add timestamp when turn state TODO to DONE
+  (setq org-log-done 'time)
+
+  ;; Set initial dir visibility to close
+  (setq org-startup-folded t))
